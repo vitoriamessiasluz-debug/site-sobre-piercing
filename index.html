@@ -48,20 +48,26 @@
  nele você vai aprender sobre alguns erros
  e sobre piercings que não sao recomendados 
       ser colocados e o por quê</p>
-    <button>🙈 0 <span>0</span> </button>
+    <button> ​🧡 0 <span>0</span> </button>
+     <button>🩷 0 <span>0</span> </button>
     </div>
 
 </main>
 </body>
 <script>
-const botao = document.querySelector("button");
-botao.addEventListener("click, botaoClicado");
+const botoes = document.querySelector(".button");
 
-function botaoClicado(){
-console.log("fui clicado");
-let texto = botao.querySelector("span");
-texto.textContent++;
-}
+botoes.forEach( function (botao){
+     botao.addEventListener("click, botaoClicado");
+
+     function botaoClicado(){
+        console.log("fui clicado");
+        let texto = botao.querySelector("span");
+        texto.textContent++;
+
+     }
+   
+})
 
 </script>
 </html>
